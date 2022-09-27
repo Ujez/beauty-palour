@@ -579,30 +579,21 @@
 
       document.getElementById("copyright").innerHTML = paragraph;
       var swiper = new Swiper(".mySwiper", {
-        centeredSlides: true,
-        creativeEffect: {
-          prev: {
-            shadow: true,
-            translate: [0, 0, -400],
-          },
-          next: {
-            translate: ["100%", 0, 0],
-          },
-        },
-        autoplay: {
-          delay: 4500,
-          disableOnInteraction: false,
-        },
-        loop: true,
-        pagination: {
-          el: ".swiper-pagination",
-          //  type: "progressbar",
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
     </script>
   </body>
 </html>
